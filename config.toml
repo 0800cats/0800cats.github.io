@@ -8,10 +8,14 @@ compile_sass = true
 highlight_code = true
 
 [extra]
+# Paleta obligatoria para el CSS interno
 palette = "monochrome"
+# Requiere una ruta de sección por defecto para la terminal
+section_path = "blog/_index.md"
+max_posts = 5
 
-# IMPORTANTE: Esta variable soluciona el error actual de renderizado
-layout = "index"
-
-[extra.content_security_policy]
-enable = false
+# El tema Terminus exige que el menú principal tenga un formato de lista exacto
+[[extra.menu.main]]
+name = "inicio"
+url = "/"
+weight = 1
