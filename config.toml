@@ -10,6 +10,8 @@ highlight_code = true
 [extra]
 palette = "monochrome"
 
-# IMPORTANTE: Estos bloques corrigen el error de compilación del tema Terminus
+# IMPORTANTE: Esta variable soluciona el error actual de renderizado
+layout = "index"
+
 [extra.content_security_policy]
 enable = false
