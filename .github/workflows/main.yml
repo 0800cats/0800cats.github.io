@@ -1,0 +1,26 @@
+name: Deploy Zola site to Pages
+
+on:
+  push:
+    branches:
+      - main  # Cambia a master si tu rama principal se llama así
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build Zola
+        uses: getzola/github-pages@v1
+        with:
+          zola_version: v0.19.2 # Puedes verificar la última versión estable de Zola
