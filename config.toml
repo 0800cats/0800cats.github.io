@@ -1,7 +1,6 @@
 base_url = "https://0800cats.github.io"
 title = "Mechacat"
-description = "0800cats.com - El sitio de Mechacat"
-theme = "terminus"
+description = "Personal website"
 default_language = "es"
 compile_sass = true
 
@@ -9,10 +8,4 @@ compile_sass = true
 highlight_code = true
 
 [extra]
-# Paletas disponibles: "monochrome", "fira", "green", "amber"
 palette = "monochrome"
-
-# IMPORTANTE: El tema requiere mapear las secciones aquí para activar la interfaz
-menu.main = [
-    { name = "inicio", url = "$BASE_URL", weight = 1 },
-]
