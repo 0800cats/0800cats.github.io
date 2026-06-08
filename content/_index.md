@@ -1,10 +1,7 @@
 +++
-title = "Home"
+title = "Mechacat"
 sort_by = "date"
-
-[extra]
-# Esto le dice al tema que use su plantilla de página principal
-template = "index.html" 
+paginate_by = 5
 +++
 
 Hola mundo
