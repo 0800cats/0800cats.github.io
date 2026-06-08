@@ -1,4 +1,4 @@
-tomlbase_url = "https://0800cats.github.io"
+base_url = "https://0800cats.github.io"
 title = "Mechacat"
 description = "Personal website"
 default_language = "es"
