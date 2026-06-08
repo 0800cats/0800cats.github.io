@@ -1,13 +1,12 @@
-base_url = "https://0800cats.github.io"
-title = "0800cats"
-description = "0800cats - El blog de Mechacat"
+base_url = "https://tu_usuario.github.io"
+title = "Mi Sitio Terminal"
+description = "Sitio web retro"
 theme = "terminus"
 default_language = "es"
-compile_html = true
+compile_sass = true
 
 [markdown]
 highlight_code = true
 
 [extra]
-# Configuración específica del tema Terminus
-palette = "monochrome" # o "fira", "green", "amber"
+palette = "monochrome"
