@@ -1,7 +1,10 @@
 +++
-title = "Inicio"
+title = "Home"
 sort_by = "date"
-insert_anchor_links = "right"
+
+[extra]
+# Esto le dice al tema que use su plantilla de página principal
+template = "index.html" 
 +++
 
-Hola Mundo
+Hola mundo
