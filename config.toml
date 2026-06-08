@@ -1,4 +1,4 @@
-base_url = "https://0800cats.github.io"
+base_url = "https://github.io"
 title = "Mechacat"
 description = "Personal website"
 default_language = "es"
@@ -12,11 +12,12 @@ palette = "monochrome"
 section_path = "blog/_index.md"
 max_posts = 5
 
-# Mantenemos fijas las propiedades de seguridad obligatorias
+# Conservamos TODAS las variables obligatorias descubiertas
+layout = "index"
+
 [extra.content_security_policy]
 enable = false
 
-# Menú obligatorio para que el tema dibuje la interfaz retro
 [[extra.menu.main]]
 name = "inicio"
 url = "/"
