@@ -1,4 +1,4 @@
-base_url = "https://0800cats.github.io"
+base_url = "https://github.io"
 title = "Mechacat"
 description = "Personal website"
 default_language = "es"
@@ -8,13 +8,15 @@ compile_sass = true
 highlight_code = true
 
 [extra]
-# Paleta obligatoria para el CSS interno
 palette = "monochrome"
-# Requiere una ruta de sección por defecto para la terminal
 section_path = "blog/_index.md"
 max_posts = 5
 
-# El tema Terminus exige que el menú principal tenga un formato de lista exacto
+# Mantenemos fijas las propiedades de seguridad obligatorias
+[extra.content_security_policy]
+enable = false
+
+# Menú obligatorio para que el tema dibuje la interfaz retro
 [[extra.menu.main]]
 name = "inicio"
 url = "/"
