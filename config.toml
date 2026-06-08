@@ -2,8 +2,6 @@ base_url = "https://0800cats.github.io"
 title = "Mechacat"
 description = "Personal website"
 default_language = "es"
-
-# Esta línea obliga a Zola a transformar los archivos SCSS del tema en estilos reales
 compile_sass = true
 
 [markdown]
