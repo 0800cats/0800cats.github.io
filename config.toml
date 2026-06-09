@@ -6,12 +6,16 @@ default_language = "es"
 compile_sass = true
 
 [markdown]
-# Eliminamos highlight_code por la nueva sintaxis nativa de Zola v0.22
 [markdown.highlighting]
 theme = "github-dark"
 
 [extra]
 palette = "monochrome"
+
+# IMPORTANTE: Esto le dice a las plantillas HTML dónde ir a buscar el CSS del tema
+styles = [
+    "style.css"
+]
 
 [[extra.menu.main]]
 name = "inicio"
