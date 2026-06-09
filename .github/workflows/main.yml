@@ -2,7 +2,7 @@ name: Build and deploy Zola website
 on:
   push:
     branches:
-      - main  # Asegúrate de cambiar esto a "master" si tu rama principal se llama así
+      - main  # Si tu rama de GitHub se llama "master", cambia aquí "main" por "master"
 
 permissions:
   contents: read
@@ -20,11 +20,14 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
 
-      # ESTE PASO CLONAL EL TEMA DIRECTAMENTE EN LA MÁQUINA VIRTUAL
-      - name: Clone Terminus Theme
+      # DESCARGA E INSTALA EL TEMA DESDE SU REPOSITORIO OFICIAL
+      - name: Install Terminus Theme
         run: |
-          mkdir -p themes
-          git clone https://github.com themes/terminus
+          mkdir -p themes/terminus
+          curl -L https://github.com -o theme.zip
+          unzip theme.zip
+          mv terminus-main/* themes/terminus/
+          rm -rf theme.zip terminus-main
 
       - name: Build Zola + upload Pages artifact
         uses: getzola/github-pages@v1
