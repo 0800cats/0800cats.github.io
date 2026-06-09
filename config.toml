@@ -1,21 +1,15 @@
 base_url = "https://0800cats.github.io"
 title = "Mechacat"
 description = "Personal website"
+theme = "terminus"
 default_language = "es"
 compile_sass = true
-theme = "terminus"
 
 [markdown]
 highlight_code = true
 
 [extra]
 palette = "monochrome"
-section_path = "blog/_index.md"
-max_posts = 5
-layout = "index"
-
-[extra.content_security_policy]
-enable = false
 
 [[extra.menu.main]]
 name = "inicio"

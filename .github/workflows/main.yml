@@ -1,9 +1,8 @@
-name: Deploy Zola site to Pages
-
+name: Build and deploy Zola website
 on:
   push:
     branches:
-      - main  # Cambia a master si tu rama principal se llama así
+      - main  # Asegúrate de cambiar esto a "master" si tu rama principal se llama así
 
 permissions:
   contents: read
@@ -18,9 +17,27 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: checkout
         uses: actions/checkout@v4
-      - name: Build Zola
+
+      # ESTE PASO CLONAL EL TEMA DIRECTAMENTE EN LA MÁQUINA VIRTUAL
+      - name: Clone Terminus Theme
+        run: |
+          mkdir -p themes
+          git clone https://github.com themes/terminus
+
+      - name: Build Zola + upload Pages artifact
         uses: getzola/github-pages@v1
         with:
-          zola_version: v0.19.2 # Puedes verificar la última versión estable de Zola
+          zola_version: v0.22.1
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
