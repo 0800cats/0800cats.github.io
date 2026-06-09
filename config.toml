@@ -6,7 +6,9 @@ default_language = "es"
 compile_sass = true
 
 [markdown]
-highlight_code = true
+# Eliminamos highlight_code por la nueva sintaxis nativa de Zola v0.22
+[markdown.highlighting]
+theme = "github-dark"
 
 [extra]
 palette = "monochrome"
