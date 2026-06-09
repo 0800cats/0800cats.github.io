@@ -1,6 +1,6 @@
 base_url = "https://0800cats.github.io/"
 title = "Mechacat"
-description = "Personal website"
+description = "El sitio oficial de Mechacat"
 theme = "terminus"
 default_language = "es"
 compile_sass = true
@@ -10,9 +10,51 @@ compile_sass = true
 theme = "github-dark"
 
 [extra]
-palette = "monochrome"
+# Cambiamos a la paleta verde clásica de terminal informática
+palette = "green"
 
+# Configuración del menú
 [[extra.menu.main]]
 name = "inicio"
 url = "/"
 weight = 1
+
+[[extra.menu.main]]
+name = "novedades"
+url = "/news"
+weight = 2
+
+[[extra.menu.main]]
+name = "quien"
+url = "/about"
+weight = 3
+
+[[extra.menu.main]]
+name = "musica"
+url = "/music"
+weight = 4
+
+[[extra.menu.main]]
+name = "blog"
+url = "/blog"
+weight = 5
+
+[[extra.menu.main]]
+name = "streams"
+url = "/streams"
+weight = 6
+
+[[extra.menu.main]]
+name = "proyectos"
+url = "/projects"
+weight = 7
+
+[[extra.menu.main]]
+name = "links"
+url = "/links"
+weight = 8
+
+[[extra.menu.main]]
+name = "contacto"
+url = "/contact"
+weight = 9
