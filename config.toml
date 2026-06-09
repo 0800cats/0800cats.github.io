@@ -10,51 +10,50 @@ compile_sass = true
 theme = "github-dark"
 
 [extra]
-# Cambiamos a la paleta verde clásica de terminal informática
 palette = "green"
 
-# Configuración del menú
-[[extra.menu.main]]
+# SINTAXIS CORREGIDA: Usamos guion bajo para que el tema detecte la lista
+[[extra.menu_main]]
 name = "inicio"
 url = "/"
 weight = 1
 
-[[extra.menu.main]]
+[[extra.menu_main]]
 name = "novedades"
 url = "/news"
 weight = 2
 
-[[extra.menu.main]]
+[[extra.menu_main]]
 name = "quien"
 url = "/about"
 weight = 3
 
-[[extra.menu.main]]
+[[extra.menu_main]]
 name = "musica"
 url = "/music"
 weight = 4
 
-[[extra.menu.main]]
+[[extra.menu_main]]
 name = "blog"
 url = "/blog"
 weight = 5
 
-[[extra.menu.main]]
+[[extra.menu_main]]
 name = "streams"
 url = "/streams"
 weight = 6
 
-[[extra.menu.main]]
+[[extra.menu_main]]
 name = "proyectos"
 url = "/projects"
 weight = 7
 
-[[extra.menu.main]]
+[[extra.menu_main]]
 name = "links"
 url = "/links"
 weight = 8
 
-[[extra.menu.main]]
+[[extra.menu_main]]
 name = "contacto"
 url = "/contact"
 weight = 9
