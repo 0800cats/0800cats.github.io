@@ -3,6 +3,7 @@ title = "Mechacat"
 description = "Personal website"
 default_language = "es"
 compile_sass = true
+theme = "terminus"
 
 [markdown]
 highlight_code = true
